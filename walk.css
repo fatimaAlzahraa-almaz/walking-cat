@@ -1,0 +1,117 @@
+:root{
+  --pixel-size:3;
+}
+
+body{
+  background-color:  rgb(206, 206, 241);
+  
+}
+.Character{
+      width: calc(115px*var(--pixel-size));
+     height: calc(113px*var(--pixel-size)) ;
+    
+ overflow: hidden;
+ position: relative;
+ margin: 40px auto;
+ border:rgb(243, 229, 236)  ;
+ border-style: none;
+ border-radius: 25px;
+ background-color: rgb(237, 229, 233);
+/* width: 75px;
+ height: 60px;
+ background-color: red;
+ */
+   
+}
+.Character_spritesheet{
+  animation: move 1s steps(4) infinite;
+    width: calc(510px*var(--pixel-size));
+    position: absolute;
+  mix-blend-mode: multiply;
+    filter:contrast(1) ;
+    padding-right: 20px;
+}
+.pixelart{
+  image-rendering: pixelated;
+}
+.right{
+  top:calc(-100px*var(--pixel-size))
+  
+}
+.back{
+   top:calc(-250px*var(--pixel-size))
+}
+.left{
+  top:calc(-390px*var(--pixel-size))
+}
+.forward{
+  top:calc(-490px*var(--pixel-size))
+}
+.set{
+  top:calc(-640px*var(--pixel-size)) 
+}
+
+@keyframes move {
+  0%{
+    transform: translate3d(0px,0,0);
+  }
+  100%{
+    transform: translate3d(-100%,0,0);
+  }
+  
+}
+.hearts{
+  margin: 0;
+  width:150px;
+  mix-blend-mode: multiply;
+   filter:contrast(1) ;
+   animation: heart 2s  alternate infinite;
+}
+@keyframes heart{
+  0%{
+    transform: rotate(0deg) scale(1.2);
+  }
+  50%{
+    transform: rotate(10deg) scale(1.2);
+  }
+
+}
+.imgbt{
+  width:50px;
+  mix-blend-mode: multiply;
+   filter:contrast(1) ;
+}
+button{
+  height: 38px;
+  width: 50px;
+  border:none;
+  background-color:transparent;
+}
+.btclass{
+   display:grid;
+   justify-content: center;
+   grid-template-columns: 80px 80px 80px 80px;
+   margin:10px;
+ 
+  
+}
+button:hover{
+transform:scale(1.1);
+ 
+}
+.heartclass{
+  display:flex;
+  justify-content: center;
+    width:600px;
+ 
+ 
+}
+ .box{
+  width:500px;
+    margin-left: 30%;
+    border:solid 2px;
+    width:500bx;
+    background-color:rgb(176, 111, 236);
+     border-radius: 8px;
+ 
+ }
