@@ -1,10 +1,12 @@
+const s1 = new Audio('./mouse-click_gt1reD8.mp3');
+const s2 = new Audio('./Yung_Kai_Blue_Cover_By_Oia_CatLyric_Video_cat_catlover_sad_vibes.mp3');
  
  function handle(b='Character_spritesheet')
 {
-   var s=document.getElementById('button-sound');
-  s.currentTime = 0;
-   s.playbackRate = 1.5;
-  s.play();
+  
+  s1.currentTime = 1.1;
+   s1.playbackRate = 1.5;
+  s1.play();
 let a=document.getElementById('ct');
 a.className = '';
 a.className += `   Character_spritesheet pixelart ${b}`;
@@ -12,9 +14,9 @@ console.log(a.className);
 }
 function sound()
 {
-   var s=document.getElementById('song');
-  s.currentTime = 0;
-   s.playbackRate = 1;
-  s.play();
+    
+  s2.currentTime = 0;
+   s2.playbackRate = 1;
+  s2.play();
 }
  
