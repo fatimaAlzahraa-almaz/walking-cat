@@ -97,7 +97,7 @@ body{
  align-items: center;
   
 }
-button:focus{
+button:hover{
   background-color:rgb(176, 111, 236);
   cursor: pointer;
   animation: btclick 0.4s;
