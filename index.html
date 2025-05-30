@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="./walk.css">
 </head>
 <body>
-   
+    <audio id="button-sound" src="mouse-click_gt1reD8.mp3" preload="auto"></audio>
+    <audio id="song" src="Yung_Kai_Blue_Cover_By_Oia_CatLyric_Video_cat_catlover_sad_vibes.mp3" preload="auto"></audio>
+    
      <div class="heartclass"><img class="hearts" src="./pinkhearts.png"></div>
 <div class="box"> 
   <div class="Character"  >
@@ -15,12 +17,13 @@
 src="./catwalk.png"  id="ct">
   </div>
 
-   <div class="btclass">
-    <button onclick="funca('left')"><img class="imgbt" src="./left.png"></button>
+  <div class="btclass">
+    <button   onclick="handle('left')" ><img class="imgbt" src="./left.png"></button>
 
-    <button onclick="funca('right')"><img  class="imgbt"  src="./right.png"></button>
-    <button onclick="funca('back')"><img  class="imgbt" src="./top.png"></button>
-    <button onclick="funca('forward')"><img  class="imgbt" src="./bottom.png"></button>
+    <button onclick="handle('right')"><img  class="imgbt"  src="./right.png"></button>
+    <button onclick="handle('back')"><img  class="imgbt" src="./top.png"></button>
+    <button onclick="handle('forward')"><img  class="imgbt" src="./bottom.png"></button>
+     <button onclick="sound()"><img  class="imgbt" src="./musicbt.png"></button>
   </div>
    </div>
   <script src="walk.js"   ></script>
