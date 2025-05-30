@@ -92,16 +92,25 @@ body{
 .btclass{
    display:grid;
    justify-content: center;
-   grid-template-columns: 80px 80px 80px 80px;
+   grid-template-columns: 80px 80px 80px 80px 80px;
    margin:10px;
  align-items: center;
   
 }
-button:hover{
-transform:scale(1.3);
-transition-duration: 0.5s;
+button:focus{
   background-color:rgb(176, 111, 236);
   cursor: pointer;
+  animation: btclick 0.4s;
+
+}
+@keyframes btclick {
+  0%{
+transform:scale(0);
+  }
+  100%{
+    transform:scale(1.3);
+  }
+
 }
 .heartclass{
   display:flex;
@@ -120,3 +129,4 @@ transition-duration: 0.5s;
      border-radius: 8px;
  
  }
+ 
